@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using PrepareTest.Models;
 
 namespace PrepareTest.Models
 {
@@ -14,5 +15,6 @@ namespace PrepareTest.Models
         public DbSet<Sanpham> Sanphams { get; set; }
         public DbSet<Danhmucthucdon> Danhmucthucdons { get; set; }
         public DbSet<Monan> Monans { get; set; }
+        public DbSet<PrepareTest.Models.User> User { get; set; } = default!;
     }
 }
